@@ -29,4 +29,4 @@ if st.button("സൃഷ്ടിക്കുക"):
             # Display the top prediction
             st.write(f"പ്രവചിച്ച പൂർത്തീകരണം: {results[0]['sequence'].replace('[MASK]', '*')}")
     else:
-        st.warning("വിട്ടുപോയ പദത്തിന്  '*' ഉപയോഗിക്കുക.")
+        st.warning("വിട്ടുപോയ പദത്തിന് പകരം * ഉപയോഗിക്കുക.")
