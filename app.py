@@ -16,7 +16,7 @@ example_text = "മലയാളം ഒരു * ഭാഷ ആണ്"
 
 # Input field for the masked prompt
 prompt = st.text_area("നിങ്ങളുടെ വാചകം മലയാളത്തിൽ ടൈപ്പ് ചെയ്യുക, വിട്ടുപോയ പദത്തിന് പകരം '*' ഉപയോഗിക്കുക.", example_text)
-
+prompt = prompt.replace("*", "[MASK]")
 # Convert user input to expected MLM format (replace * with <mask>)
 converted_prompt = prompt.replace("*", "<mask>")
 
