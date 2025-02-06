@@ -105,7 +105,3 @@ Feel free to fork the project, improve the code, and submit a pull request! 🚀
 If you like this project, give it a ⭐ on GitHub!  
 For any issues, open an **issue** in the repository. 😊  
 ```
-
----
-
-This README provides a **clear**, **bilingual** guide for your **GitHub repository** with installation instructions, usage examples, and project details. 🚀🎉 Let me know if you need any modifications! 😊
