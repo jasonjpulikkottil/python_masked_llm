@@ -66,7 +66,7 @@ Use `*` to indicate the missing word.
 pip install -r requirements.txt
 ```
 
-### 2️⃣ **ആപ്പ് പ്രവർത്തിപ്പിക്കുക**
+### 2️⃣ **ആപ്പ് പ്രവർത്തിപ്പിക്കേണ്ട രീതി**
 ```
 streamlit run app.py
 ```
@@ -77,7 +77,7 @@ streamlit run app.py
    ```
    മലയാളം ഒരു * ഭാഷയാണ്.
    ```
-🔹 **ഫലവും:**  
+🔹 **ഫലം:**  
    ```
    മലയാളം ഒരു മനോഹരമായ ഭാഷയാണ്.
    ```
@@ -104,4 +104,4 @@ Feel free to fork the project, improve the code, and submit a pull request! 🚀
 ### 📢 **Support & Feedback**
 If you like this project, give it a ⭐ on GitHub!  
 For any issues, open an **issue** in the repository. 😊  
-```
+
