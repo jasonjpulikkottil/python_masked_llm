@@ -20,14 +20,13 @@ prompt = prompt.replace("*", "[MASK]")
 # Convert user input to expected MLM format (replace * with <mask>)
 
 # Button to generate text (complete the masked input)
-if st.button("Generate Text"):
+if st.button("സൃഷ്ടിക്കുക"):
     if "[MASK]" in prompt:  # Ensure user has included a mask
-        with st.spinner("Generating text..."):
+        with st.spinner("ഫലം സൃഷ്ടിക്കപ്പെടുന്നു..."):
             # Generate predictions for the masked prompt
             results = pipe(prompt)
-            st.subheader("Generated Text:")
+            st.subheader("സൃഷ്ടിച്ച വാചകം:")
             # Display the top prediction
-            st.write(f"Original prompt: {prompt}")
-            st.write(f"Predicted completion: {results[0]['sequence'].replace('[MASK]', '*')}")
+            st.write(f"പ്രവചിച്ച പൂർത്തീകരണം: {results[0]['sequence'].replace('[MASK]', '*')}")
     else:
         st.warning("വിട്ടുപോയ പദത്തിന്  '*' ഉപയോഗിക്കുക.")
