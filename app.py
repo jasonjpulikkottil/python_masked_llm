@@ -21,13 +21,13 @@ prompt = prompt.replace("*", "[MASK]")
 
 # Button to generate text (complete the masked input)
 if st.button("Generate Text"):
-    if "*" in prompt:  # Ensure user has included a mask
+    if "[MASK]" in prompt:  # Ensure user has included a mask
         with st.spinner("Generating text..."):
             # Generate predictions for the masked prompt
-            results = pipe(converted_prompt)
+            results = pipe(prompt)
             st.subheader("Generated Text:")
             # Display the top prediction
             st.write(f"Original prompt: {prompt}")
-            st.write(f"Predicted completion: {results[0]['sequence'].replace('<mask>', '*')}")
+            st.write(f"Predicted completion: {results[0]['sequence'].replace('[MASK]', '*')}")
     else:
         st.warning("വിട്ടുപോയ പദത്തിന്  '*' ഉപയോഗിക്കുക.")
