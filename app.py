@@ -19,7 +19,7 @@ if st.button("സൃഷ്ടിക്കുക"):
         with st.spinner("ഫലം സൃഷ്ടിക്കപ്പെടുന്നു..."):
             # Generate predictions for the masked prompt
             results = pipe(prompt, top_k=3)  # Get top 3 predictions
-            st.subheader("സൃഷ്ടിച്ച വാചകം:")
+            st.subheader("സൃഷ്ടിച്ച വാചകങ്ങൾ:")
 
             # Display the top 3 predictions
             for i, result in enumerate(results[:3]):
